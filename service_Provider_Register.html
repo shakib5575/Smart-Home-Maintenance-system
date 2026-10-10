@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Registration</title>
+</head>
+<body>
+    <h1>Smart Home Maintenance System </h1>
+    <h2> Service Provider  Registration</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+             <label for="profilePicture">Profile Picture:</label><br>
+            <input type="file" id="profilePicture" name="profilePicture"  required><br><br>
+             <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+             <label for="mobile">Mobile Number:</label><br>
+            <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile number" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"  required><br><br>
+            <label for="confirmPassword"> Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"  required><br><br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Professional Information</legend>
+            <label for="service">Service Category:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electricalServices">Electrical Services</option>
+                <option value="ac">AC Repair and Servicing</option>
+                <option value="cleaning">Home Cleaning</option>
+                <option value="painting">Painting</option>
+                <option value="carpentary">Caroentary</option>
+                <option value="repair">Appliance Repairing</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+             <label for="experience">Years Of Experience:</label><br>
+            <input type="number" id="experience" name="experience"><br><br>
+             <label for="description">Describe your skills:</label><br>
+            <textarea id="description" name="description" placeholder="Describe your experience and skills" rows="4" cols="40" required></textarea><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Address Information</legend>
+            <label for="presentAddress">Present Address:</label>
+            <textarea id="presentAddress" name="presentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
+             <label for="permanentAddress">Permananent Address:</label>
+            <textarea id="permanentAddress" name="permanentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
+            
+        </fieldset>
+        <br>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        <button type="submit">Register</button>
+        <button type="reset">Clear form</button>
+
+    </form>
+    <p>Already Registered?<a href="login.html">Login here</a></p>   
+</body>
+</html>
