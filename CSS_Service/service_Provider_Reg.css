@@ -6,7 +6,6 @@ body {
     color: #2a2525;
 }
  
-
 .page-header {
     background-color: darkred;
     color: white;
@@ -47,6 +46,7 @@ body {
     background-color: gainsboro;
 }
  
+
 .form-section2 {
     border: 2px solid lightgray;
     border-radius: 5px;
@@ -55,7 +55,6 @@ body {
     background-color: blanchedalmond;
 }
  
-
 .form-section3 {
     border: 2px solid lightgray;
     border-radius: 5px;
@@ -63,6 +62,7 @@ body {
     padding: 15px;
     background-color: honeydew;
 }
+ 
 
 legend {
     color: darkblue;
@@ -72,7 +72,6 @@ legend {
     margin: 8px;
 }
  
-
 label {
     font-size: 15px;
     font-weight: bold;
@@ -106,6 +105,7 @@ button {
     cursor: pointer;
     transition: 0.4s;
 }
+ 
 
 button[type="submit"] {
     background-color: darkblue;
@@ -114,8 +114,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: darkcyan;
 }
- 
-/* Clear Form Button */
+
 button[type="reset"] {
     background-color: dimgray;
 }
@@ -124,7 +123,7 @@ button[type="reset"]:hover {
     background-color: red;
 }
  
-/* Part 11: Terms and Conditions */
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -147,40 +146,5 @@ button[type="reset"]:hover {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-}
- 
-
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
- 
-    .page-header h1 {
-        font-size: 24px;
-    }
- 
-    .page-header p {
-        font-size: 18px;
-    }
- 
-    .registration-form {
-        width: calc(100% - 20px);
-        margin: 15px auto;
-        padding: 12px;
-    }
- 
-    .form-section1,
-    .form-section2,
-    .form-section3 {
-        padding: 10px;
-    }
- 
-    textarea {
-        width: 100%;
-    }
- 
-    .btn-grp button {
-        padding: 10px 20px;
-    }
 }
  
