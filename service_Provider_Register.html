@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Provider Registration</title>
+    <link rel="stylesheet" href="CSS_Service/service_Provider_Reg.css">
+    
 </head>
 <body>
-    <h1>Smart Home Maintenance System </h1>
+    <div class="page-header">
+    <h1 >Smart Home Maintenance System </h1>
     <h2> Service Provider  Registration</h2>
-    <form>
-        <fieldset>
+    </div>
+    <form class="registration-form">
+        <fieldset class="form-section1">
             <legend>Personal Information</legend>
             <label for="name">Full Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
@@ -26,7 +30,7 @@
         </fieldset>
 
         <br>
-        <fieldset>
+         <fieldset class="form-section2">
             <legend>Professional Information</legend>
             <label for="service">Service Category:</label>
             <select id="service" name="service" required>
@@ -47,19 +51,27 @@
             <textarea id="description" name="description" placeholder="Describe your experience and skills" rows="4" cols="40" required></textarea><br><br>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset class="form-section3">
             <legend>Address Information</legend>
-            <label for="presentAddress">Present Address:</label>
+            <label for="presentAddress">Present Address:</label><br>
             <textarea id="presentAddress" name="presentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
-             <label for="permanentAddress">Permananent Address:</label>
+             <label for="permanentAddress">Permananent Address:</label><br>
             <textarea id="permanentAddress" name="permanentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
             
         </fieldset>
         <br>
+        <div class="checkbox">
+
         <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the terms and conditions</label><br><br>
-        <button type="submit">Register</button>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+        </div>
+
+
+        <div class="btn-grp">
+            <button type="submit">Register</button>
         <button type="reset">Clear form</button>
+        </div>
 
     </form>
     <p>Already Registered?<a href="login.html">Login here</a></p>   

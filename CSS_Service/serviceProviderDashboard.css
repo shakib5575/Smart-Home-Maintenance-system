@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 220, 226);
+    color: #2a2525;
+}
+ 
+.dashboard-header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+ 
+.hamburger-menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 25px;
+}
+ 
+#menu-toggle {
+    display: none;
+}
+ 
+.menu-icon {
+    display: block;
+    color: #173D4A;
+    font-size: 30px;
+    cursor: pointer;
+}
+ 
+.menu-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px gray;
+    z-index: 1000;
+}
+ 
+#menu-toggle:checked ~ .menu-panel {
+    display: block;
+}
+ 
+.menu-panel a {
+    display: block;
+    padding: 12px;
+    color: #173D4A;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+}
+ 
+.menu-panel a:hover {
+    background-color: lightblue;
+}
+ 
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+ 
+.dashboard-header p {
+    margin-bottom: 0;
+}
+ 
+.sidebar {
+    background-color: #173D4A;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+ 
+.sidebar h2 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+ 
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+ 
+.sidebar a:hover {
+    background-color: darkcyan;
+    transition: 0.3s;
+}
+ 
+.dashboard-content {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 20px;
+}
+ 
+.welcome-section {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px gray;
+}
+ 
+.welcome-section h2 {
+    color: darkred;
+    margin-top: 0;
+}
+ 
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+ 
+.card {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 8px gray;
+}
+ 
+.card h3 {
+    font-size: 16px;
+    color: #173D4A;
+}
+ 
+.number {
+    font-size: 28px;
+    font-weight: bold;
+    color: darkred;
+}
+ 
+.dashboard-section {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 8px gray;
+    overflow-x: auto;
+}
+ 
+.dashboard-section h2 {
+    color: #173D4A;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+th, td {
+    padding: 12px;
+    border: 1px solid lightgray;
+    text-align: left;
+}
+ 
+th {
+    background-color: #173D4A;
+    color: white;
+}
+ 
+.new-status {
+    color: darkblue;
+    font-weight: bold;
+}
+ 
+.progress-status {
+    color: darkorange;
+    font-weight: bold;
+}
+ 
+.dashboard-section a {
+    color: darkred;
+}
+ 
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555555;
+}
+ 
