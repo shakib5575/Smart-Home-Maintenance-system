@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #afc5de;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    min-height: 450px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.left {
+    background-color: #043e81;
+    color: white;
+    display: flex;
+    width: 50%;
+    padding:40px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    margin-bottom: 20px;
+}
+
+.left p {
+    line-height: 1.5;
+}
+
+.right {
+    width: 50%;
+    padding: 40px;
+    color: #043e81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.right input[type="email"],
+.right input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #043e81;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #043e81;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

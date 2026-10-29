@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+.header {
+    background-color: #afc5de;
+    color: #043e81;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #cbefeb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    position: sticky;
+    top: 8px;
+    z-index: 1000;
+    border-bottom: 3px solid #044da1;
+}
+
+.navbar a {
+    color: #043e81;
+    text-decoration: underline;
+    margin-right: 15px;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #043e81;
+}
+
+.main-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.welcome-section {
+    background-color: #e1f1e5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.welcome-section h2 {
+    color: #043e81;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.welcome-section p {
+    text-align: center;
+    color: #222;
+}
+
+.content-section {
+    background-color: #e1f1e5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-section h2 {
+    color: #043e81;
+    margin-bottom: 5px;
+}
+
+.content-section  p {
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.service-box {
+    background-color: #afc5de;
+    color: #043e81;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.work-section {
+    background-color: #afc5de;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.work-section h2 {
+    color: #043e81;
+    margin-bottom: 15px;
+}
+
+.work-section h3 {
+    color: #043e81;
+    margin-top: 10px;
+}
+
+.about-section {
+    background-color: #f0f3f7;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section h2 {
+    color: #043e81;
+    margin-bottom: 5px;
+}
+
+.choose-section {
+    background-color: #afc5de;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.choose-section h2{
+    color: #043e81;
+}
+.choose-section ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-section {
+    background-color: #f0f3f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-section p {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.footer {
+    background-color: #043e81;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
