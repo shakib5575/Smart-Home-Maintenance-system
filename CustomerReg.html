@@ -3,74 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Registration</title>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../CSS/registration.css">
 </head>
 <body>
-    <h1>Smart Home Service Maintenance System</h1>
-    <hr>
-    <h2>Customer Registration</h2>
 
-    <p>Create your account to book home services.</p>
-    <form>
+    <div class="container">
 
-        <label>
-            Full Name:
-        </label>
-        <br>
-        <input type="text" placeholder="Enter your full name" required>
-        <br><br>
+        <form>
+            <h2>Registration Form</h2>
+            <p>Fill out the form carefully for registration</p>
 
-        <label>
-            Email Address:
-        </label>
-        <br>
-        <input type="email" placeholder="Enter your email" required>
-        <br><br>
-        <label>
-            Phone Number:
-        </label>
-        <br>
-        <input type="tel" placeholder="Enter your phone number" required>
-        <br><br>
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+            <br><br>
 
-        <label>
-            Address:
-        </label>
-        <br>
-        <textarea rows="3" cols="30" placeholder="Enter your address" required></textarea>
-        <br><br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+            <br><br>
 
-        <label>
-            Password:
-        </label>
-        <br>
-        <input type="password" placeholder="Create a password" required>
-        <br><br>
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Example@gmail.com">
+            <br><br>
 
-        <label>
-            Confirm Password:
-        </label>
-        <br>
-        <input type="password" placeholder="Enter password again" required>
-        <br><br>
+            <label for="phone">Phone Number:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX">
+            <br><br>
 
-        <input type="checkbox" required>
-        <label>
-            I agree to the Terms and Conditions
-        </label>
-        <br><br>
+            <label>Address:</label>
+            <br>
+            <textarea rows="3" cols="30" placeholder="Enter your address"></textarea>
+            <br><br>
 
-        
-        <input type="submit" value="Register">
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="password ">
+            <br><br>
 
-    </form>
-    <hr>
-    <p>Already have an account?</p>
-    <a href="login.html">Login Here</a>
+            <label for="password">Confirm Password:</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Repeat your password">
+            <br><br>
 
-    <br><br>
+            <div class="remember">
+                <input type="checkbox" required>
+                <label> I agree to the Terms and Conditions </label>
+            </div>
+            <br>
 
-    <a href="homepage.html">Back to Home</a>
+            <input type="submit" value="SIGN UP" class="button">
 
+            <br>
+            <hr>
+            <p>Already have an account?</p>
+            <div class="links">
+                <a href="">Login Here</a>
+                <a href="">Back to Home</a>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
