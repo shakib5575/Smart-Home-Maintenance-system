@@ -147,4 +147,16 @@ button[type="reset"]:hover {
     gap: 10px;
     flex-wrap: wrap;
 }
- 
+ .registration-form p{
+    color:red;
+    font-size: 15px;
+    margin: 3px 0 10px 0;
+ }
+ .valid{
+    background-color: lightgreen;
+    border: 2px solid green;
+ }
+ .invalid{
+    background-color: lightpink;
+    border: 2px solid red;
+ }
