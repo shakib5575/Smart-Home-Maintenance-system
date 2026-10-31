@@ -1,54 +1,73 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="../Smart-Home-Maintenance-system/CSS_admin/style.css">
-  <title>Admin Registration</title>
+    <script src="../Smart-Home-Maintenance-system/JS_admin/myjs.js"></script>
+    <title>Admin Registration</title>
 </head>
 <body>
 
+<table border="1" align="center">
+    <tr>
+        <td width="40%" align="center">
+            <h1>Smart Home</h1>
+            <h2>Maintenance System</h2><br><br>
+            <p>Register as an admin to manage users, services and system.</p>
+        </td>
 
-    <table border="1" align="center">
-        <tr>
-            <td width="40%" align="center">
-                <h1>Smart Home </h1>
-                <h2>Maintenance System</h2><br><br>
-                <p>Register as an admin to manage users,services and system.</p>
-            </td>
-            <td width="60%">
-       
- 
-  <h3>Admin Registration</h3>
-  <p>Fill in the details below to create your admin account.</p>
- 
-  <form>
-    <label>Full Name <span>*</span></label><br>
-    <input type="text" size="45" placeholder="Enter your full name" > <br><br>
- 
-    <label>Email Address <span>*</span></label><br>
-    <input type="email" size="45" placeholder="Enter your email address" > <br><br>
- 
-    <label>Phone Number <span>*</span> </label><br>
-    <input type="number" size="42" placeholder="Enter your phone number" > <br><br>
- 
-    <label>Username <span>*</span></label><br>
-    <input type="text" size="45" placeholder="Create a username" > <br><br>
- 
-    <label>Password <span>*</span></label><br>
-    <input type="password" size="45"  placeholder="Create a password" > <br><br>
- 
-    <label>Confirm Password <span>*</span> </label><br>
-    <input type="password" size="45" placeholder="Confirm your password" > <br><br>
- 
-    <label>Admin Security Code <span>*</span></label><br>
-    <input type="text" size="45" placeholder="Enter admin security code"> <br><br>
- 
-    <input type="submit" value="Create Admin Account">
-  </form>
- 
-  <p>Already have an account? <a href="../login/login.html">Login</a></p>
-   <a href="../home/home.html">Home</a>   <br><br>
-            </td>
-        </tr>
-  </table>
+        <td width="60%">
+
+            <h3>Admin Registration</h3>
+            <p>Fill in the details below to create your admin account.</p>
+
+            <form onsubmit="return validationForm()" novalidate>
+
+                <label>Full Name <span class="star">*</span></label><br>
+                <input type="text" id="name" size="45" placeholder="Enter your full name">
+                <div class="error" id="nameError"></div><br><br>
+
+                <label>Email Address <span class="star">*</span></label><br>
+                <input type="email" id="email" size="45" placeholder="Enter your email address">
+                <div class="error" id="emailError"></div><br>
+
+                <label>Phone Number <span class="star">*</span></label><br>
+                <input type="tel" id="phone" size="45" placeholder="Enter your phone number">
+                <div class="error" id="phoneError"></div><br>
+
+                <label>Username <span class="star">*</span></label><br>
+                <input type="text" id="username" size="45" placeholder="Create a username">
+                <div class="error" id="usernameError"></div><br>
+
+                <label>Password <span class="star">*</span></label><br>
+                <input type="password" id="password" size="45" placeholder="Create a password">
+                <div class="error" id="passwordError"></div><br>
+                <input type="checkbox" onclick="showPassword()"> Show Password<br><br>
+
+                <label>Confirm Password <span class="star">*</span></label><br>
+                <input type="password" id="confirmpassword" size="45" placeholder="Confirm your password">
+                <div class="error" id="confirmpasswordError"></div><br>
+                <input type="checkbox" onclick="showConfirmPassword()"> Show Password<br><br>
+
+                <label>Admin Security Code <span class="star">*</span></label><br>
+                <input type="text" id="code" size="45" placeholder="Enter admin security code">
+                <div class="error" id="codeError"></div><br>
+
+                <label>NID Card Photo <span class="star">*</span></label><br>
+                <input type="file" id="nid" accept="image/*">
+                <div class="error" id="nidError"></div><br>
+
+                <input type="submit" value="Create Admin Account">
+                <div id="message"></div><br>
+
+            </form>
+
+            <p>Already have an account? <a href="../login/login.html">Login</a></p>
+            <a href="../home/home.html">Home</a><br><br>
+
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
