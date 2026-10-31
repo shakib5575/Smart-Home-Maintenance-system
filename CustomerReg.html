@@ -11,49 +11,54 @@
 
     <div class="container">
 
-        <form>
+        <form  method="post" onsubmit="return validationForm()">
             <h2>Registration Form</h2>
             <p>Fill out the form carefully for registration</p>
 
             <label for="fname">First Name:</label>
             <br>
             <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-            <br><br>
+            <p id="fnameErr" style="color:red"></p>
+            
 
             <label for="lname">Last Name:</label>
             <br>
             <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-            <br><br>
+            <p id="lnameErr" style="color:red"></p>
+            
 
             <label for="email">Email Address:</label>
             <br>
             <input type="email" id="email" name="email" placeholder="Example@gmail.com">
-            <br><br>
+            <p id="emailErr" style="color:red"></p>
+
 
             <label for="phone">Phone Number:</label>
             <br>
             <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX">
-            <br><br>
+            <p id="phoneErr" style="color:red"></p>
 
             <label>Address:</label>
             <br>
-            <textarea rows="3" cols="30" placeholder="Enter your address"></textarea>
-            <br><br>
+            <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address"></textarea>
+            <p id="addressErr" style="color:red"></p>
 
             <label for="password">Password:</label>
             <br>
             <input type="password" id="password" name="password" placeholder="password ">
-            <br><br>
+            <p id="passwordErr" style="color:red"></p>
 
             <label for="password">Confirm Password:</label>
             <br>
-            <input type="password" id="password" name="password" placeholder="Repeat your password">
-            <br><br>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Repeat your password">
+            <p id="confirmPasswordErr" style="color:red"></p>
 
             <div class="remember">
-                <input type="checkbox" required>
-                <label> I agree to the Terms and Conditions </label>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms"> I agree to the Terms and Conditions </label>
+                
             </div>
+            <p id="termsErr" style="color:red"></p>
             <br>
 
             <input type="submit" value="SIGN UP" class="button">
@@ -68,5 +73,7 @@
 
         </form>
     </div>
+
+    <script src="../JavaScript/CustomerReg.js"></script>
 </body>
 </html>
