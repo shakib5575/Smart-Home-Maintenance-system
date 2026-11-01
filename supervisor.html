@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supervisor Registration</title>
+    <link rel="stylesheet" href="supervisor.css">
+
 </head>
 <body>
 
@@ -15,48 +17,45 @@
     <fieldset>
         <legend>Account Details</legend>
 
-        Username:
-        <input type="text">
+        <label>Username</label>
+        <input type="text" placeholder="Enter username">
 
-        Email:
-        <input type="email">
-        <br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
 
-        Password:
-        <input type="password">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
 
-        Confirm Password:
-        <input type="password">
-        <br><br>
-
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password">
     </fieldset>
 
     <fieldset>
         <legend>Personal Details</legend>
 
-        Full Name:
-        <input type="text">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name">
 
-        Gender:
-        <input type="radio" value="Male"> Male
-        <input type="radio" value="Female"> Female
-        <br><br>
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="Male"> <label>Male</label>
+            <input type="radio" name="gender" value="Female"> <label>Female</label>
+        </div>
 
-        Date of Birth:
+        <label>Date of Birth</label>
         <input type="date">
 
-        Phone:
-        <input type="tel">
-        <br><br>
+        <label>Phone</label>
+        <input type="tel" placeholder="Enter phone number">
 
-        Address:
-        <input type="text">
+        <label>Address</label>
+        <input type="text" placeholder="Enter address">
     </fieldset>
 
     <fieldset>
         <legend>Service Details</legend>
 
-        Service Type:
+        <label>Service Type</label>
         <select>
             <option>-- Select --</option>
             <option>Plumbing</option>
@@ -69,40 +68,39 @@
             <option>Other Maintenance</option>
         </select>
 
-        Experience:
+        <label>Experience</label>
         <select>
             <option>0 Year</option>
             <option>1 Year</option>
             <option>2 Years</option>
             <option>3+ Years</option>
         </select>
-        <br><br>
 
-        Service Area:
-        <input type="text">
-        <br><br>
+        <label>Service Area</label>
+        <input type="text" placeholder="Enter service area">
 
-        Portfolio / Work Link:
-        <input type="url">
+        <label>Portfolio / Work Link</label>
+        <input type="url" placeholder="https://...">
     </fieldset>
 
     <fieldset>
         <legend>Documents</legend>
 
-        Upload Profile Photo:
-        <input type="file">
-        <br><br>
+        <label>Upload Profile Photo</label>
+        <input type="file" accept="image/*">
 
-        Upload NID / Certificate:
+        <label>Upload NID / Certificate</label>
         <input type="file">
     </fieldset>
 
     <fieldset>
         <legend>Confirmation</legend>
-
+        <br>
         <input type="checkbox">
-        I confirm that the information provided is accurate and I agree to the terms and conditions.
+        I confirm that the information is accurate and I agree to the terms and conditions.
     </fieldset>
+
+    <button type="submit">Register</button>
 
 </form>
 
