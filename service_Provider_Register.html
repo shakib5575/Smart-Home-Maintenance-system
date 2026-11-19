@@ -12,28 +12,50 @@
     <h1 >Smart Home Maintenance System </h1>
     <h2> Service Provider  Registration</h2>
     </div>
-    <form class="registration-form">
+    <form class="registration-form" novalidate>
         <fieldset class="form-section1">
             <legend>Personal Information</legend>
             <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
-             <label for="profilePicture">Profile Picture:</label><br>
-            <input type="file" id="profilePicture" name="profilePicture"  required><br><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" ><br><br>
+             <p id="nameError"></p>
+            <label for="profilePicture">Profile Picture:</label><br>
+            <input type="file" id="profilePicture" name="profilePicture" ><br><br>
+             <p id="pictureError"></p>
              <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-             <label for="mobile">Mobile Number:</label><br>
-            <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile number" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+             <p id="emailError"></p> 
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number"><br><br>
+             <p id="mobileError"></p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" ><br><br>
+             <p id="dobError"></p>
+            <label for="nid">NID Number:</label><br>
+            <input type="text" id="nid" name="nid" placeholder="Provide your NID number" ><br><br>
+             <p id="nidError"></p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+             <input type="radio" id="other" name="gender" value="other">
+             <label for="other">Other</label><br><br>
+             <p id="genderError"></p>
+ 
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"  required><br><br>
+            <input type="password" id="password" name="password" ><br><br>
+             <p id="passwordError"></p>
             <label for="confirmPassword"> Confirm Password:</label><br>
-            <input type="password" id="confirmPassword" name="confirmPassword"  required><br><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"  ><br><br>
+             <p id="confirmPasswordError"></p>
         </fieldset>
 
         <br>
          <fieldset class="form-section2">
             <legend>Professional Information</legend>
             <label for="service">Service Category:</label>
-            <select id="service" name="service" required>
+             <p id="serviceError"></p>
+            <select id="service" name="service" >
                 <option value="">Select a service</option>
                 <option value="plumbing">Plumbing</option>
                 <option value="electricalServices">Electrical Services</option>
@@ -46,34 +68,39 @@
             </select><br><br>
 
              <label for="experience">Years Of Experience:</label><br>
+              <p id="experienceError"></p>
             <input type="number" id="experience" name="experience"><br><br>
              <label for="description">Describe your skills:</label><br>
-            <textarea id="description" name="description" placeholder="Describe your experience and skills" rows="4" cols="40" required></textarea><br><br>
+              <p id="descriptionError"></p>
+            <textarea id="description" name="description" placeholder="Describe your experience and skills" rows="4" cols="40" ></textarea><br><br>
         </fieldset>
         <br>
         <fieldset class="form-section3">
             <legend>Address Information</legend>
             <label for="presentAddress">Present Address:</label><br>
-            <textarea id="presentAddress" name="presentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
-             <label for="permanentAddress">Permananent Address:</label><br>
-            <textarea id="permanentAddress" name="permanentAddress" rows="3" cols="30" placeholder="Enter your present address" required></textarea><br><br>
-            
+            <textarea id="presentAddress" name="presentAddress" rows="3" cols="30" placeholder="Enter your present address" ></textarea><br><br>
+             <p id="presentAddressError"></p> 
+            <label for="permanentAddress">Permananent Address:</label><br>
+            <textarea id="permanentAddress" name="permanentAddress" rows="3" cols="30" placeholder="Enter your present address" ></textarea><br><br>
+             <p id="permanentAddressError"></p>
         </fieldset>
         <br>
         <div class="checkbox">
 
-        <input type="checkbox" id="terms" name="terms" required>
+        <input type="checkbox" id="terms" name="terms">
         <label for="terms">I agree to the terms and conditions</label>
         <br><br>
         </div>
-
+        <p id="termsError"></p>
 
         <div class="btn-grp">
-            <button type="submit">Register</button>
-        <button type="reset">Clear form</button>
+            <button type="submit" id="registerBtn" onclick="return confirmRegister()">Register</button>
+        <button type="reset" id="clearBtn" onclick="return confirmClear()">Clear form</button>
         </div>
 
     </form>
     <p>Already Registered?<a href="login.html">Login here</a></p>   
+    <script src="JS_Service/serviceProviderRegistration.js"></script>
+
 </body>
 </html>
